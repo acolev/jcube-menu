@@ -34,7 +34,7 @@ class MenuServiceProvider extends ServiceProvider
   {
     Route::namespace($this->namespace)->group(function () {
       // admin routes
-      Route::middleware('web')
+      Route::middleware('web', 'admin')
         ->namespace('Admin')
         ->prefix(env('ADMIN_PREFIX') ?: 'admin')
         ->name('admin.')
