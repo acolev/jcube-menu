@@ -1,5 +1,7 @@
 <?php
 
+use jCube\Models\Menu;
+
 function getMenu($parent = null)
 {
     $menus = Menu::with(['allSubItems'])
