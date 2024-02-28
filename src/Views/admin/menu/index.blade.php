@@ -20,19 +20,19 @@
                             <input type="hidden" name="parent_id">
                             <div class="form-group row">
                                 <div class="col">
-                                    <x-form.input name="name" label="Name" :value="old('name')"/>
+                                    <x-input name="name" label="Name" :value="old('name')"/>
                                 </div>
                                 <div class="col-md-4">
-                                    <x-form.input name="icon" label="Icon" :value="old('icon')"/>
+                                    <x-input name="icon" label="Icon" :value="old('icon')"/>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <div class="col">
-                                    <x-form.input type="select" name="object_type" label="Type" :value="old('type')"
+                                    <x-input type="select" name="object_type" label="Type" :value="old('type')"
                                                   :variants="config('menu.types')"/>
                                 </div>
                                 <div class="col-md-4">
-                                    <x-form.input name="object_id" label="ID" :value="old('id')"/>
+                                    <x-input name="object_id" label="ID" :value="old('id')"/>
                                 </div>
                             </div>
                         </div>
